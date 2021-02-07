@@ -1,0 +1,48 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": "7348075e-601f-435c-957b-ef23db3a7a66"
+        },
+        "name": {
+            "value": "costa-road-204-webapp"
+        },
+        "location": {
+            "value": "West Europe"
+        },
+        "hostingPlanName": {
+            "value": "costa-road-204-appsrvplan-win"
+        },
+        "serverFarmResourceGroup": {
+            "value": "costa-road-204-compute"
+        },
+        "alwaysOn": {
+            "value": false
+        },
+        "sku": {
+            "value": "Free"
+        },
+        "skuCode": {
+            "value": "F1"
+        },
+        "workerSize": {
+            "value": "0"
+        },
+        "workerSizeId": {
+            "value": "0"
+        },
+        "numberOfWorkers": {
+            "value": "1"
+        },
+        "currentStack": {
+            "value": "dotnetcore"
+        },
+        "phpVersion": {
+            "value": "OFF"
+        },
+        "errorLink": {
+            "value": "https://costa-road-204-webapp.scm.azurewebsites.net/detectors?type=tools&name=eventviewer"
+        }
+    }
+}

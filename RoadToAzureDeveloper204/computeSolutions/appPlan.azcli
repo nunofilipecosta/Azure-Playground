@@ -1,0 +1,6 @@
+az group create -n costa-road-204-compute -l westeurope
+
+az appservice plan create -g costa-road-204-compute -n costa-road-204-appsrvplan-win --sku F1
+az deployment group create -g costa-road-204-compute -f ./arm/appServicePlan/template.json -p ./arm/appServicePlan/parameters.json
+
+az deployment group create -g costa-road-204-compute -f ./arm/webApp/template.json -p ./arm/appServicePlan/parameters.json
