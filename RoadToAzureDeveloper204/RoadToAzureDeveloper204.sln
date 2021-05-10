@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleMessageApp.Client", "message\SampleMessageApp.Client\SampleMessageApp.Client.csproj", "{25BB8E0C-521C-4D1C-8E61-F9253634910F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "message", "message", "{BC8BAEF1-7BC0-4774-97CA-51A07F7683BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleMessageApp.Producer", "message\SampleMessageApp.Producer\SampleMessageApp.Producer.csproj", "{53FE92A0-0FB1-414B-8792-3BF0C667E633}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "QueueStorage", "QueueStorage", "{02D8184F-8953-4F25-AD50-17C78800AFFA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceBus", "ServiceBus", "{E2C65B8B-E28E-4997-99A8-3F7AAF97DCFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25BB8E0C-521C-4D1C-8E61-F9253634910F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25BB8E0C-521C-4D1C-8E61-F9253634910F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25BB8E0C-521C-4D1C-8E61-F9253634910F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25BB8E0C-521C-4D1C-8E61-F9253634910F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53FE92A0-0FB1-414B-8792-3BF0C667E633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53FE92A0-0FB1-414B-8792-3BF0C667E633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53FE92A0-0FB1-414B-8792-3BF0C667E633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53FE92A0-0FB1-414B-8792-3BF0C667E633}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{25BB8E0C-521C-4D1C-8E61-F9253634910F} = {02D8184F-8953-4F25-AD50-17C78800AFFA}
+		{53FE92A0-0FB1-414B-8792-3BF0C667E633} = {02D8184F-8953-4F25-AD50-17C78800AFFA}
+		{02D8184F-8953-4F25-AD50-17C78800AFFA} = {BC8BAEF1-7BC0-4774-97CA-51A07F7683BD}
+		{E2C65B8B-E28E-4997-99A8-3F7AAF97DCFC} = {BC8BAEF1-7BC0-4774-97CA-51A07F7683BD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A51D73A-243D-44A0-AA68-4E693502902B}
+	EndGlobalSection
+EndGlobal

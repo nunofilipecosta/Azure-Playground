@@ -1,0 +1,12 @@
+# Azure Resource Groups
+az group create -n costa-road-204-message  -l westeurope
+
+## Azure Storage Account
+az storage account create -n costaroad204messagesa --resource-group costa-road-204-message -l westeurope --sku Standard_LRS
+
+## Storage Queue
+az storage queue create --name mysamplequeue --account-name costaroad204messagesa
+az storage queue delete --name mysamplequeue --account-name costaroad204messagesa
+
+## Peek a message
+az storage message peek --queue-name mysamplequeue --account-name costaroad204messagesa
