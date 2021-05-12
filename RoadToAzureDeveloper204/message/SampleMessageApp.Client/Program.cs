@@ -42,8 +42,17 @@ namespace SampleMessageApp.Client
             {
                 Response<QueueMessage> message = queueClient.ReceiveMessage();
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine($"Received message: '{message.Value}'");
+                Console.WriteLine($"Received message: '{message.Value.Body}'");
                 Console.ForegroundColor = ConsoleColor.White;
+                if (DateTime.UtcNow.Ticks %2 == 0)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine($"Deleting message: '{message.Value.Body}'");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    queueClient.DeleteMessage(message.Value.MessageId, message.Value.PopReceipt);
+                }
+
+
 
             }, null, TimeSpan.FromSeconds(1), TimeSpan.FromSeconds(10));
         }
